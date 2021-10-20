@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/* font-family: 'Anton', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+/* font-family: 'Questrial', sans-serif; */
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    padding-top:30px;
+    background-color: rgb(120, 120, 124);
+
+}
+
+#box{
+    padding:10px;
+    padding-bottom:0px!important;
+    width:370px;
+    height:500px;
+    border-radius:60px 0 60px;
+    background-color:rgb(192, 196, 250);  
+ border:2px solid #000;
+    display: flex;
+    flex-direction: column;
+  padding-top:80px;
+    align-items: center;
+    color:rgb(4, 9, 80);
+
+}
+
+
+
+#container{
+    height:300px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+}
+
+
+#display{
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 5px;
+    color:rgb(4, 9, 80);
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:100px 0 100px;
+}
+
+#date{
+    font-family: 'Questrial', sans-serif;
+    letter-spacing:0.5px;
+    font-size: 20px;
+    color:rgb(4, 9, 80);
+
+}
+
+ i{
+ font-size:40px;
+ margin-right:10px;
+
+} 
+
+
+
+#text{
+    text-align: center;
+    margin-top:50px;
+    font-family: 'Questrial', sans-serif;
+    font-size:20px;
+    font-weight: bold;
+    letter-spacing: 1px;    
+}
+#line{
+    width:150px;
+    height:5px;
+    background-color: rgb(4, 9, 80);
+    margin-top:50px;
+}
+
+#selectors{
+    width:75%;
+    height:40px;
+    background-color: rgb(192, 196, 250); 
+    border: 2px solid rgb(4, 9, 80);
+    border-radius: 0 30px 30px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    display: none;   
+}
+
+#option{    
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    margin-top:50px;
+    margin-left:10px;
+    width:100%;    
+}
+
+.switching{
+    animation-name:abc;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-play-state:running;
+    transition: 0.5s;
+display: flex!important;
+
+
+}
+
+@keyframes abc{
+    0%{
+        width:0%;
+        display:none!important
+    }
+    50%{
+        width:30%;
+    }
+    100%{
+        width:75%;
+        
+    }
+}
+
+#selectors .n{
+    width:20%;
+    height:30px;
+    border:2px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#yellow{
+    background-color:rgb(243, 245, 158);
+}
+
+.circley{
+    background-color: rgb(43, 44, 4);
+}
+
+#green{
+    background-color: rgb(192, 250, 202);   
+}
+.circleg{
+    background-color: rgb(19, 44, 7);
+}
+
+#red{
+    background-color: rgb(245, 194, 204) ;
+}
+.circler{
+    background-color: rgb(95, 11, 28);
+}
+
+#blue{
+    background-color:rgb(192, 196, 250);
+}
+.circleb{
+    background-color: rgb(4, 9, 80);
+}
+
+#selectors .n .c{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    border:1px solid black;
+}
